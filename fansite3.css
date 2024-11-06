@@ -19,14 +19,15 @@
 }
 /*page structure*/
 body {
-    margin-bottom: 0px;
+    margin: 0px;
+    background-color: #eee;
     }
 .page {
-    padding-right: 10%;
+    padding-right: 11.5%;
     padding-left: 10%;
     background: #eee;
     padding-bottom: 0.2%;
-    padding-top: 4%;
+    padding-top: 5%;
 }
 .page2 {
       padding-right: 10%;
@@ -48,10 +49,13 @@ body {
 }
 .navlist {
     list-style-type: none;
-    margin: 10px;
     overflow: hidden;
     background-color: black;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
 }   
 li {
     float: left;
@@ -68,9 +72,9 @@ li {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
     font-family: "carving-bold";
+    padding: 14px 16px;
 } 
 li a:hover {
     color: teal;
@@ -131,10 +135,19 @@ li a:hover {
         top: 40px; 
         left: 0;
         z-index: 1;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
-    .navlist2 {
-        margin: 0px;
-        }
+    .navlist2 {    
+        margin: 0;  
+        padding: 0; 
+        width: 100%;  
+        list-style-type: none;    
+        background-color: black; 
+        border-top-left-radius: 5px;    
+        border-top-right-radius: 5px;    
+        bottom: 0;    
+    }
     .hamburgermenu:checked + .menu + .navlist {
         display: flex;
         flex-direction: column;
@@ -154,11 +167,19 @@ li a:hover {
         display: flex;
         flex-direction: column;
     }
+    .link2{
+    padding-top: 14px;
+      padding-right: 16px;
+      padding-bottom: 14px;
+      padding-left: 25px;
+    }
+    .headermenu {
+        padding-bottom: 6px;
+    }
 }
 /****************************** Main *************************/
 /* Site title and description */
 .mainpage {
-    margin: 1%;
     background: #80808038;
     padding: 4%;
     border-radius: 5px;
@@ -297,8 +318,8 @@ li a:hover {
     width: 78.5%;
   }
 .footer {
-    padding-right: 10%;
-    padding-left: 10%;
+    margin-right: 11.5%;
+    margin-left: 10%;
     height: 100px;
     background-color: black;
     border-top-left-radius: 5px;
