@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initiale-scale 1.0">
+        <meta name="keywords" content=" A REMPLIR ">
+        <meta name="description" content=" Un fan site ">
+        <title>Home</title>
+        <link href="fansite.css" rel="stylesheet">
+    </head>
+    <body>   
+        <div class="page">
+            <header class="headermenu">
+                <nav class="navbar"> <!-- Menu --> 
+                    <input type="checkbox" id="hamburgermenu" class="hamburgermenu">
+                        <label for="hamburgermenu" class="menu">Menu</label>
+                            <ul class="navlist">
+                                <li><a href="#home" class="link">Home</a></li>
+                                <li><a href="#MichaelJackson" class="link">Michael Jackson</a></li>
+                                <li><a href="#Jinx" class="link">Jinx</a></li>
+                                <li><a href="#Naruto" class="link">Naruto</a></li>
+                                <li><a href="#contact" class="link">Contact</a></li>
+                                <input class="searchbar" type="text" placeholder="Rechercher...">
+                            </ul>
+                </nav>
+            </header>
+            <main class="mainpage">
+                <h1 class="maintitle">MJN Chronicles</h1>
+                    <p class="firsttext">
+                        Que vous ayez des questions, des commentaires ou des demandes spécifiques, 
+                        n'hésitez pas à nous faire signe. Votre satisfaction est notre priorité, et nous nous engageons à vous répondre rapidement. 
+                    </p>
+                    <div class="contactusmain"> <!-- contact us form --> 
+                        <h2 class="titleservice2">Contactez nous!</h2>
+                        <form class="contactusform" action="https://bloompetals.com/submit" method="post">
+                            <fieldset class="contactinfo">
+                                <legend class="legend">Vos Informations</legend>
+                                <label class="labelcontactus" for="civilite">Civilité</label><br>
+                                    <select class="civility" name="civilite" aria-label="civilite" required>
+                                        <option class="selectcivility" aria-label="choisissez" value="vide" disabled selected><span class="choose">Choisissez</span></option>
+                                        <option class="selectcivility" aria-label="mademoiselle" value="Mademoiselle">Mademoiselle</option>
+                                        <option class="selectcivility" aria-label="madame" value="Madame">Madame</option>
+                                        <option class="selectcivility" aria-label="monsieur" value="Monsieur">Monsieur</option>
+                                        <option class="selectcivility" aria-label="autre" value="Autre">Autre</option>
+                                    </select>
+                                        <br>
+                                        <label class="labelcontactus" for="nom">Nom</label><br>
+                                        <input type="text" class="inputcontactus" name="nom" aria-label="nom" required>
+                                        <br>
+                                        <label class="labelcontactus" for="prenom">Prénom</label><br>
+                                        <input type="text" class="inputcontactus" name="prenom" aria-label="prenom" required>
+                                        <br>
+                                        <label class="labelcontactus" for="addresse">Addresse</label><br>
+                                        <input type="text" class="inputcontactus" name="addresse" aria-label="addresse" required>
+                                        <br>
+                                        <label class="labelcontactus" for="code-postal">Code Postal</label><br>
+                                        <input type="text" class="inputcontactus" name="code-postal" aria-label="code postal" required>
+                                        <br>
+                                        <label class="labelcontactus" for="ville">Ville</label><br>
+                                        <input type="text" class="inputcontactus" name="ville" aria-label="ville" required>
+                                        <br>
+                                        <label class="labelcontactus" for="pays" >Pays</label><br>
+                                        <input type="text" class="inputcontactus" name="pays" aria-label="pays" required>
+                            </fieldset>
+                            <fieldset class="contactmessage">
+                                <legend class="legend">Votre Message</legend>
+                                <label class="labelcontactus" for="message">Message</label><br>
+                                <textarea class="messagetext" name="message" aria-label="message">Écrivez votre message ici</textarea>
+                                <br>
+                                <input type="checkbox" id="checkboxcontactus" name="checkbox" aria-label="case a cocher" required>
+                                <label class="labelcontactus" for="checkbox">J'ai lu et j'accepte la <a href="https://#" >politique de confidentialité</a> de BloomPetals</label>
+                                <br>
+                                <button class="buttonsubmit" aria-label="envoyer" type="submit">Envoyer</button>
+                            </fieldset>
+                        </form>
+                    </div>
+            </main>
+        </div>
+    </body>
+     <!-- footer --> 
+    <footer class="footer">
+    </footer>
+</html>
