@@ -219,12 +219,12 @@ li a:hover {
 /*Characters images*/
 
 .section {
-    width: 48%;
-    margin: 5px;
-    padding: 5px;
+    width: 68%;
+    margin-top: -60px;
+    padding-top: 60px;
 }
 .charpic1 {
-    width: 100%;
+    width: 25%;
     font-family: "carving-regular";
 }
 .charpic2 {
