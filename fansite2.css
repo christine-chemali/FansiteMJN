@@ -190,6 +190,7 @@ li a:hover {
     background-image: url(./Media2/Video2/boom.gif);
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 .maintitle {
     font-family: "Graffiti";
@@ -223,6 +224,12 @@ li a:hover {
         text-shadow: none;
     }    
   }
+/*Main media querries*/
+@media only screen and (max-width: 933px){
+    .mainpage {
+        background-size: auto;
+      }
+}
 /**** first part Text ****/
 .firsttext {
     font-family: "QuicksandBold";
