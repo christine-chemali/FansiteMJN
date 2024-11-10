@@ -107,7 +107,7 @@ li a:hover {
     display: none;
 }
 /*Media Querries hamburger menu*/
-@media only screen and (max-width: 954px){
+@media only screen and (max-width: 1065px){
     .navbar {
         position: relative;
         display: inline-block;
@@ -236,6 +236,16 @@ li a:hover {
     width: 88%;;
     font-family: "carving-regular";
 }
+.character2picture {
+    margin: 0px;
+}
+.character1picture {
+    margin: 0px;
+}
+.character3picture {
+    margin: 0px;
+}
+  
 
 /*Media Queries index page character sections*/
 @media only screen and (min-width: 650px) and (max-width: 895px) {
@@ -275,7 +285,7 @@ li a:hover {
         width: 60%;
     }
     .charpic2 {
-        width: 57%;
+        width: 50%;
     }
     .charpic3 {
         width: 58%;
@@ -320,11 +330,70 @@ li a:hover {
 .footer {
     margin-right: 11.5%;
     margin-left: 10%;
-    height: 50px;
     background-color: black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+
   }
+.pdc, .smicon {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-family: "carving-regular";
+    font-size: 14px;
+ }
+ .pdc:hover{
+    color:#008080;
+ }
+.footerdiv { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:10px;
+}
+.allrights{
+  color: white;
+  font-family: "carving-regular";
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.legal, .socialmedia {
+    text-align: center;
+    width: 45%;
+    align-content: center;
+}
+.legal {
+    display: inline-flex;  
+}
+/*Media Querries footer*/
+@media only screen and (max-width: 730px) {
+    .legal, .socialmedia {
+        width: 100%;
+    }
+    .legal {
+        display: block;
+        padding: 10px;
+      }    
+}
+@media only screen and (max-width: 535px){
+    .legal {
+        display: grid;
+        padding: 5px;
+    }
+    .pdc, .smicon {
+        margin: 0px;
+        padding: 5px;
+    }
+    .footerdiv {
+        padding-bottom: 0px;
+    }   
+}
 
 /***************************contactus**********************/
 .contactusmain {
@@ -408,5 +477,21 @@ li a:hover {
     .contactmessage {
         width: 100%;
     }
-
 }
+@media only screen and (max-width: 525px){
+    .maintitle {
+        font-size: 2.2rem;
+        margin-top: 35px;
+      }
+    .firsttext {
+        width: auto;
+        font-size: 1.1rem;
+    }
+    .inputcontactus {
+        width: 80%;
+        }
+        .civility {
+        width: 82%;
+        }
+}
+
