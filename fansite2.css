@@ -74,14 +74,17 @@ li {
     text-decoration: none;
     font-family: "QuicksandBold";
 }
-.link2 {
+.link2, .link3 {
     display: block;
     color: #e7ebf2;
     text-align: center;
     text-decoration: none;
     font-family: "QuicksandBold";
     padding: 14px 16px;
-} 
+}
+.link3 {
+    padding-left:40px;
+}
 li a:hover {
     color: #8dd9ff;
 }
@@ -97,15 +100,7 @@ li a:hover {
     font-family: "QuicksandBold";
     margin-bottom: 25px;
 }
-/* bottom link menu */
-.navlist2 {
-    margin: 0px;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    }
+
 /*Hamburger menu*/
 .menu {
     display: none;
@@ -145,16 +140,6 @@ li a:hover {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
-    .navlist2 {    
-        margin: 0;  
-        padding: 0; 
-        width: 100%;  
-        list-style-type: none;    
-        background-color: black; 
-        border-top-left-radius: 5px;    
-        border-top-right-radius: 5px;    
-        bottom: 0;    
-    }
     .hamburgermenu:checked + .menu + .navlist {
         display: flex;
         flex-direction: column;
@@ -171,8 +156,8 @@ li a:hover {
         display: flex;
         flex-direction: column;
     }
-    .link2{
-    padding-top: 14px;
+    .link2, .link3 {
+      padding-top: 14px;
       padding-right: 16px;
       padding-bottom: 14px;
       padding-left: 25px;
@@ -499,19 +484,6 @@ padding: 10px;
         justify-content: center;
         }
 }
-
-/* pics row of 3 */
-/*
-@media only screen and (min-width: 650px) and (max-width: 895px) {
-    .charpic2 {
-    width: 60%;
-    }
-}
-@media only screen and (max-width: 649px) {
-    .charpic2 {
-    width: 80%;
-    }
-}*/
 @media only screen and (min-width: 942px) and (max-width: 1207px){
     .section {
         width: 47%;
@@ -560,9 +532,51 @@ padding: 10px;
         min-width: 275px;
     }
 }
+/********************* Part 5 Fanart gallery ********************************/
+#fanart {
+    font-family: "Pinkend";
+    font-size: 3rem;
+    color: #e7ebf2;
+    margin-bottom: 15px;
+    background-image: url(./Media2/Video2/ );
+    margin: 0;
+    height: 220px;
+    align-content: end;
+  }
+.imagereal {
+    height: 200px;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: "Garet-Book";
+    font-size: 14px;
+    max-width: 270px;
+  }
+.flexpics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
 
 /***************************** footer ************************/
+/* footer menu */
+.navlist2 {
+    margin: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px;
+    width: 100%; 
+    }
 
+/* footer body */
 .fansitefooter {
     border-radius: 5px;
     position: fixed;
@@ -594,7 +608,10 @@ padding: 10px;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding:10px;
+  padding-right:10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 .allrights{
   color:  #fb3eb9;
@@ -632,15 +649,39 @@ padding: 10px;
     .pdc, .smicon {
         margin: 0px;
         padding: 5px;
-    }
-    .footerdiv {
-        padding-bottom: 0px;
-    }   
+    }  
 }
 @media only screen and (max-width: 500px){
     .footer {
         padding-bottom: 85px;
       }  
+}
+/* footer media querries*/
+@media only screen and (max-width: 500px){
+    .navlist2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navlist2 li {
+        width: 50%;
+    }
+    .link2, .link3 {
+        padding-left:15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .navlist2 {    
+        margin: 0;  
+        padding: 0;   
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;   
+    }
+    .navlist2 li {
+        text-align: center;
+        box-sizing: border-box;
+    }
 }
 
 
