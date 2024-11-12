@@ -176,6 +176,7 @@ li a:hover {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 0px;
 }
 .maintitle {
     font-family: "Graffiti";
@@ -247,17 +248,13 @@ li a:hover {
     padding-top: 20px;
     background-image: url(./Media2/Pictures2/JINX\ WAS\ HERE.jpg);
 }
-.leagueoflegend , .events {
-    font-family: "Pinkend";
-    font-size: 3rem;
-    color: #e7ebf2;
+.leaguegif {
     background-image: url(./Media2/Video2/jinx\ battaille.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0px;
     height: 350px;
-    align-content: end;
 }
 .startpage {
     display: flex;
@@ -296,14 +293,13 @@ li a:hover {
     margin: 10px;
     }
 /*Part 3 actu news events*/
-.events {
+.newsgif {
     background-image:url(./Media2/Video2/jinx\ cocktail\ party.gif) ;
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     background-position: top;
-    align-content: end; 
 }
 .textarcane2 {
     font-family: "QuicksandBold";
@@ -333,18 +329,13 @@ li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
-    background-image: url(./Media2/Pictures2/jinkwashere.jpg);
+    background-image: url(./Media2/Video2/JinxWildrift.gif);
     background-size: contain;
   }
-#goodies {
-    font-family: "Pinkend";
-    font-size: 3rem;
-    color: #e7ebf2;
-    margin-bottom: 15px;
+.goodiesgif {
     background-image: url(./Media2/Video2/jink.gif);
     margin: 0;
     height: 220px;
-    align-content: end;
   }
 .text2 {
     font-family: "QuicksandBold";
@@ -533,35 +524,54 @@ padding: 10px;
     }
 }
 /********************* Part 5 Fanart gallery ********************************/
-#fanart {
+.monkey {
+    width: 100px;
+}
+.fanartgif {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./Media2/Video2/fond\ fanart.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    }
+#fanart, #goodies, #league, #news {
     font-family: "Pinkend";
     font-size: 3rem;
     color: #e7ebf2;
-    margin-bottom: 15px;
-    background-image: url(./Media2/Video2/ );
-    margin: 0;
-    height: 220px;
-    align-content: end;
-  }
+    margin: 0px;
+    background-color: black;
+    padding-top: 40px;
+    padding-left: 20px;
+}
 .imagereal {
-    height: 200px;
+    height: 400px;
     border-radius: 5px;
     margin: 5px;
-    font-family: "Garet-Book";
+    font-family: "Quiscksandbold";
     font-size: 14px;
-    max-width: 270px;
+    border: 10px solid;
   }
 .flexpics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: space-around;
     overflow: hidden;
+    background-image: url(./Media2/Video2/fond\ fanart.gif);
+  /*  background-repeat: no-repeat;
+    background-size: cover;*/
 }
-
+.videofanart {
+    height: 400px;
+    border-radius: 5px;
+    border: 10px solid black;
+    margin: 5px;
+}
 
 /***************************** footer ************************/
 /* footer menu */
