@@ -168,14 +168,14 @@ li a:hover {
 }
 /****************************** Main *************************/
 /* Site title and description */
-.mainpage {
+.mainpage  {
     background: #898be175;
     padding: 4%;
     border-radius: 5px;
-    background-image: url(./Media2/Video2/boom.gif);
-    background-position: top right;
+    background-image: url(./Media2/Video2/Boom.gif);
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 92%;
     padding-bottom: 0px;
 }
 .maintitle {
@@ -210,12 +210,12 @@ li a:hover {
         text-shadow: none;
     }    
   }
-/*Main media querries*/
+/*Main media querries*/ /*
 @media only screen and (max-width: 933px){
     .mainpage {
         background-size: auto;
       }
-}
+}*/
 /**** first part Text ****/
 .firsttext {
     font-family: "QuicksandBold";
@@ -271,8 +271,11 @@ li a:hover {
     font-family: "QuicksandBold";
 }
 .text {
-    font-family: "QuicksandBook";
     width: 70%;
+}
+
+.text, .resumesaison1 {
+    font-family: "QuicksandBook";
     text-align: left;
     margin: auto;
     font-size: 1.1rem;
@@ -292,14 +295,47 @@ li a:hover {
     width: 210px;
     margin: 10px;
     }
-/*Part 3 actu news events*/
+/******************************* Part 2 arcane *************************/
+
+.arcanegif {
+  background-image: url(./Media2/Video2/jinx\ resume\ life.gif);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 30%;
+  margin: 0px;
+  height: 580px;
+  background-color: black;
+}
+.resumesaison1 {
+    width: 90%;
+}
+.titleresume1 {
+    font-family: "QuicksandBold";
+}
+.saison1 {    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;    
+    width: 100%;
+    background: black;
+    padding-bottom: 15px;
+}
+.videotrailers1 {    
+    margin: auto;
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+}
+
+/******************************** Part 3 actu news events ***************************/
 .newsgif {
     background-image:url(./Media2/Video2/jinx\ cocktail\ party.gif) ;
     margin: 0px;
     background-repeat: no-repeat;
-    background-size: cover;
     height: 500px;
-    background-position: top;
+    background-position: bottom;
+    background-color: black;
+    background-size: 62%;
 }
 .textarcane2 {
     font-family: "QuicksandBold";
@@ -322,7 +358,7 @@ li a:hover {
     margin: 10px;
     align-content: center;
 }
-/* part 4 goodies */
+/************************************** part 4 goodies ************/
 .goodmerch {
     display: flex;
     flex-direction: row;
@@ -336,6 +372,7 @@ li a:hover {
     background-image: url(./Media2/Video2/jink.gif);
     margin: 0;
     height: 220px;
+    background-position: top;
   }
 .text2 {
     font-family: "QuicksandBold";
@@ -401,6 +438,7 @@ padding: 10px;
     width: 100%;
     border-radius: 5px;
     }
+
 /**** Text under pictures or video ****/
 .underpictext {
     font-family: "QuicksandBook";
@@ -444,6 +482,12 @@ padding: 10px;
 .buttonsubmit:hover {
     color:  #8dd9ff;
 } 
+/**/
+@media only screen and (max-width: 540px){
+    .underunicorn{
+        font-size: 15px;
+    }
+}
 /*Media Queries index page first section league of legends*/
 @media only screen and (max-width: 1333px){
     .toppic {
@@ -488,6 +532,9 @@ padding: 10px;
 @media only screen and (max-width: 895px) {
     .section , .videoarcane2 , .fentybox , .text2 {
         width: auto;
+    }
+    .videotrailers1{
+        width: 92%;
     }
     .character1picture {
         text-align: left;
@@ -537,7 +584,7 @@ padding: 10px;
     height: 300px;
     background-position: center;
     }
-#fanart, #goodies, #league, #news {
+#fanart, #goodies, #league, #news, #arcane {
     font-family: "Pinkend";
     font-size: 3rem;
     color: #e7ebf2;
@@ -691,6 +738,158 @@ padding: 10px;
     .navlist2 li {
         text-align: center;
         box-sizing: border-box;
+    }
+}
+#arcane {
+    padding-bottom: 15px;
+   }
+/* Media querries general adjustements */
+@media only screen and (max-width: 450px){
+.textarcane2 {
+font-size: 1.1rem;
+}
+#fanart, #goodies, #league, #news, #arcane {
+font-size: 2rem;
+padding-left: 10px;
+}
+.newsgif {
+height: 240px;
+background-size: 94%;
+}
+.text, .resumesaison1 {
+font-size: 1rem;
+}
+.arcanegif {
+background-size: 70%;
+height: 400px;
+background-position: bottom;
+}
+.firsttext {
+font-size: 1.05rem;
+}
+.firsttext::first-letter {
+font-size: 1.2rem;
+}
+.text2 {
+    font-size: 1rem;
+}
+}
+/* 
+/* */
+
+@media only screen and (max-width: 540px) {
+    .underunicorn {
+      font-size: 16px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 670px){
+  .text2 {
+    font-size: 1rem;
+  }
+  .textarcane2 {
+    font-size: 1.15rem;
+  }
+  #fanart, #goodies, #league, #news, #arcane {
+    font-size: 2.6rem;
+  }
+  .goodiesgif {
+    background-position: center;
+  }
+  .text, .resumesaison1 {
+    font-size: 1rem;
+  }
+  .firsttext {
+    font-size: 1.05rem;
+  }
+  .firsttext::first-letter {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 671px) and (max-width: 1000px){
+  .imagereal {
+    height: 350px;
+  } 
+  .videofanart {
+    height: 350px;
+  }
+  .text, .resumesaison1 {
+    font-size: 1rem;
+  }
+  .textarcane2 {
+    font-size: 1.2rem;
+  }
+  .goodiesgif {
+    background-position: center;
+  }
+  .text2 {
+    font-size: 1rem;
+  }
+  .firsttext {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 880px){
+    .textback {
+        background-color: black;
+        padding-top: 1px;
+        padding-bottom: 1px;   
+    }
+}
+/* gif media querries */
+@media only screen and (min-width: 451px) and (max-width: 590px) {
+.arcanegif{
+    height: 480px;
+    background-size: 65%;
+}
+.newsgif {
+    height: 300px;
+    background-size: 94%;
+    }
+}
+@media only screen and (min-width: 591px) and (max-width: 725px) {
+    .arcanegif{
+        height: 500px;
+        background-size: 55%;
+    }
+    .newsgif {
+        height: 370px;
+        background-size: 94%;
+    }
+}
+@media only screen and (min-width: 726px) and (max-width: 860px) {
+    .arcanegif{
+        background-size: 50%;
+    }
+    .newsgif {
+        height: 440px;
+        background-size: 94%;
+    }
+}
+@media only screen and (min-width: 861px) and (max-width: 925px) {
+    .arcanegif{
+        background-size: 45%;
+    }
+    .newsgif {
+        height: 475px;
+        background-size: 94%;
+    }
+}
+@media only screen and (min-width: 926px) and (max-width: 1100px) {
+    .arcanegif{
+        background-size: 40%;
+    }
+    .newsgif {
+        height: 500px;
+        background-size: 80%;
+    }
+}
+@media only screen and (min-width: 1101px) and (max-width: 1275px) {
+    .arcanegif{
+        background-size: 35%;
+    }
+    .newsgif {
+        height: 500px;
+        background-size: 70%;
     }
 }
 
