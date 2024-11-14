@@ -274,6 +274,9 @@ h5{
     flex-direction: column;
     text-align: center;
     font-family: "carving-regular";
+    width: 100%;
+    flex: 0 0 60%;
+    padding-right: 20px;
 }
 /**article 2 et 3**/
 .billets{
@@ -289,8 +292,8 @@ h5{
     flex-direction: column;
     text-align: center;
     font-family: "carving-regular";
-    margin-left: 50px;
-    width: 110%;
+    width: auto;
+    height: auto;
 }
 .titresecondaire_actu{
     margin: 0px;
