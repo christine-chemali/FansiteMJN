@@ -1,7 +1,7 @@
 /*fonts*/
 @font-face {
-    font-family: "dragonhunter";
-    src: url('./Media/Fonts/dragonhunter.otf') format('opentype');
+    font-family: "Naruto";
+    src: url('./Media1/Font1/ninja_naruto/njnaruto.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,19 +19,20 @@
 }
 /*page structure*/
 body {
-    margin-bottom: 0px;
+    margin: 0px;
+    background-color: #ec8450;
     }
 .page {
-    padding-right: 10%;
+    padding-right: 11.5%;
     padding-left: 10%;
-    background: #eee;
+    background: linear-gradient(#E9E843, #EC8450);
     padding-bottom: 0.2%;
-    padding-top: 4%;
+    padding-top: 5%;
 }
 .page2 {
       padding-right: 10%;
       padding-left: 10%;
-      background: #eee;
+      background: #ec8450;
       padding-bottom: 0.2%;
 }
 /********************************** MENU******************************/
@@ -48,10 +49,13 @@ body {
 }
 .navlist {
     list-style-type: none;
-    margin: 10px;
     overflow: hidden;
     background-color: black;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
 }   
 li {
     float: left;
@@ -68,12 +72,12 @@ li {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
     font-family: "carving-bold";
+    padding: 14px 16px;
 } 
 li a:hover {
-    color: teal;
+    color: #EAC548;
 }
 .searchbar {
     float: right;
@@ -120,7 +124,7 @@ li a:hover {
         margin-left: 15px;
     }
     .menu:hover{
-        color: teal;
+        color: #EAC548;
     }
     .navlist {
         list-style: none;
@@ -131,10 +135,19 @@ li a:hover {
         top: 40px; 
         left: 0;
         z-index: 1;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
-    .navlist2 {
-        margin: 0px;
-        }
+    .navlist2 {    
+        margin: 0;  
+        padding: 0; 
+        width: 100%;  
+        list-style-type: none;    
+        background-color: black; 
+        border-top-left-radius: 5px;    
+        border-top-right-radius: 5px;    
+        bottom: 0;    
+    }
     .hamburgermenu:checked + .menu + .navlist {
         display: flex;
         flex-direction: column;
@@ -154,19 +167,31 @@ li a:hover {
         display: flex;
         flex-direction: column;
     }
+    .link2{
+    padding-top: 14px;
+      padding-right: 16px;
+      padding-bottom: 14px;
+      padding-left: 25px;
+    }
+    .headermenu {
+        padding-bottom: 6px;
+    }
 }
 /****************************** Main *************************/
 /* Site title and description */
 .mainpage {
-    margin: 1%;
-    background: #80808038;
+    background: linear-gradient(#4c4b5538, #ec8450);
     padding: 4%;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 .maintitle {
-    font-family: "dragonhunter";
-    color: teal;
-    font-size: 3rem;
+    font-family: "Naruto";
+    color: rgb(54, 51, 49);
+    font-size: 6rem;
     margin-top: 10px;
     text-align: center;
 }
@@ -177,9 +202,9 @@ li a:hover {
     text-align: center;
     margin: auto;
     padding-top: 20px;
-    font-size: 1.2rem;
-    font-style: italic;
+    font-size: 1.8rem;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 .firsttext::first-letter {
     font-size: 2rem;
@@ -187,109 +212,113 @@ li a:hover {
     font-weight: lighter;
     line-height: 0.8rem;
 }
-/***** Second part Characters ******/
-.characters {
+/*category*/
+.mainpage .category {
+    margin-right: auto;
+    font-size: 2rem;
+    font-family: "Naruto";
+    color: rgb(54, 51, 49);
+    border-bottom: 3px solid rgb(54, 51, 49);
+}
+/*Characters images, text and video*/
+/**Histoire**/
+.mainpage .Trousse1 .character3 .character3picture img {
+    height: 300px;
+    width: 250px;
+    margin-top: 5px;
+}
+.mainpage .Trousse1 .character3{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-
-/*Characters images*/
-
-.section {
-    width: 31%;
-    margin: 5px;
-    padding: 5px;
+.mainpage .Trousse1 .character3 .chartext {
+    flex: 0 0 60%; 
+    padding: 20px;
+    background-color:rgb(54, 51, 49) ;
+    color: #fff;
+    margin: auto;
+    font-size: 1.5rem;
 }
-.charpic1 {
-    width: 100%;
+.mainpage .Trousse1 .character3 .character3picture .Boruto_img {
+    height: 280px;
+    width: 250px;
+    margin-top: 5px;
+}
+h5{
+    font-size: 1.5rem;
+}
+        /**actualités**/
+/**video dlc**/
+#Video{
+    margin: auto;
+    width: 90%;
+    padding: 1%;
+}
+.TitrevideoDLC{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+.LienVideo{
+    color: black;
+}
+.TrousseVideo{
+    display: flex;
+    align-items: center;
+}
+.TrousseVideo1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     font-family: "carving-regular";
 }
-.charpic2 {
-    width: 76.5%;
+/**article 2 et 3**/
+.billets{
+    margin: auto;
+    width: 50%;
+}
+.mangaboruto{
+    margin: auto;
+    width: 50%;
+}
+.TrousseVideo2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     font-family: "carving-regular";
+    margin-left: 50px;
+    width: 110%;
 }
-.charpic3 {
-    width: 88%;;
-    font-family: "carving-regular";
+.titresecondaire_actu{
+    margin: 0px;
 }
-
-/*Media Queries index page character sections*/
-@media only screen and (min-width: 650px) and (max-width: 895px) {
-    .charpic2 {
-    width: 60%;
-    }
+.LienVideo2{
+    color: black;
+    font-size: 0.5rem;
 }
-@media only screen and (max-width: 649px) {
-    .charpic2 {
-    width: 80%;
-    }
-}
-@media only screen and (min-width: 942px) and (max-width: 1207px){
-    .section {
-        width: 47%;
-    }
-}
-@media only screen and (min-width: 896px) and (max-width: 941px) {
-    .section {
-        width: 46%;
-    }
-}
-@media only screen and (max-width: 895px) {
-    .section {
-        width: auto;
-    }
-    .character1picture {
-        text-align: left;
-    }
-    .character2pic{
-        text-align: center;
-    }
-    .character3picture {
-        text-align:right;
-    }
-    .charpic1 {
-        width: 60%;
-    }
-    .charpic2 {
-        width: 57%;
-    }
-    .charpic3 {
-        width: 58%;
-    }
-}
-@media only screen and (max-width: 649px) {
-    .charpic1 {
-        width: 80%;
-    }
-    .charpic2 {
-        width: 77%;
-    }
-    .charpic3 {
-        width: 78%;
-    } 
-    .character1picture {
-        text-align: left;
-    }
-    .character2picture {
-        text-align: center;
-    }
-    .character3picture {
-        text-align:right;
-    }
-}
-/**** Text under pictures ****/
-.chartext {
-    font-family: "carving-regular";
-    padding: 10px;
-    border-radius: 5px;
-    background: whitesmoke;
-    margin-top: 0px;
+.ecartarticle{
+    margin-top: -12px;
 }
 /***************************** footer ************************/
-
+/* footer menu */
+.navlist2 {    
+    margin: 0;  
+    padding: 0; 
+    width: 100%;  
+    list-style-type: none;    
+    background-color: black; 
+    border-top-left-radius: 5px;    
+    border-top-right-radius: 5px;    
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;    
+}
+.navlist2 li {
+    text-align: center;
+    box-sizing: border-box;
+}
+/* footer body */
 .fansitefooter {
     border-radius: 5px;
     position: fixed;
@@ -297,11 +326,117 @@ li a:hover {
     width: 78.5%;
   }
 .footer {
-    padding-right: 10%;
-    padding-left: 10%;
-    height: 100px;
+    margin-right: 11.5%;
+    margin-left: 10%;
+    height: auto;
     background-color: black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding-bottom: 30px;
   }
-
+  .pdc, .smicon {
+    color: #eac4488a;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-family: "QuicksandBold";
+    font-size: 14px;
+ }
+ .pdc:hover{
+    color: #8dd9ff;
+ }
+.footerdiv { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right:10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.allrights{
+  color:  #eac4488a;
+  font-family: "QuicksandBold";
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.legal, .socialmedia {
+    text-align: center;
+    width: 45%;
+    align-content: center;
+}
+.legal {
+    display: inline-flex;  
+}
+/*Media Querries footer*/
+@media only screen and (max-width: 730px) {
+    .legal, .socialmedia {
+        width: 100%;
+    }
+    .legal {
+        display: block;
+        padding: 10px;
+      }    
+}
+@media only screen and (max-width: 535px){
+    .legal {
+        display: grid;
+        padding: 5px;
+    }
+    .pdc, .smicon {
+        margin: 0px;
+        padding: 5px;
+    }  
+}
+@media only screen and (max-width: 500px){
+    .footer {
+        padding-bottom: 85px;
+      }  
+}
+/* footer media querries*/
+@media only screen and (max-width: 500px){
+    .navlist2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navlist2 li {
+        width: 50%;
+    }
+    .link2, .link3 {
+        padding-left:15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .navlist2 {    
+        margin: 0;  
+        padding: 0;   
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;   
+    }
+    .navlist2 li {
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 485px){
+    .navlist2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navlist2 li {
+        width: 50%;
+    }
+    .link2 {
+        padding-left:15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+}
