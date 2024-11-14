@@ -280,7 +280,7 @@ li a:hover {
     width: 70%;
 }
 
-.text, .resumesaison1 {
+.text, .resumesaison1, .playloltext {
     font-family: "QuicksandBook";
     text-align: left;
     margin: auto;
@@ -301,8 +301,30 @@ li a:hover {
     width: 210px;
     margin: 10px;
     }
-/******************************* Part 2 arcane *************************/
+.lolegend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    order:4;
+}
+.playloltext {
+    width: 90%;
+    order: 3;
+}
+.underlolmedia {
+    margin: 15px;
+}
+.loltext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
 
+/******************************* Part 2 arcane *************************/
 .arcanegif {
   background-image: url(./Media2/Video2/jinx\ bang.gif);
   background-repeat: no-repeat;
@@ -368,7 +390,7 @@ li a:hover {
     border-radius: 5px;
     padding: 10px;
     }
-.Arcane2event {
+.Arcane2event, .playlol {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -410,26 +432,28 @@ li a:hover {
 .textgoodies {
 padding: 10px;
 }
-.underunicorn {
+.underunicorn, .underlolmedia {
     font-family: "QuicksandBold";
     padding: 10px;
     border-radius: 5px;
     margin-top: 0px;
     color: #e7ebf2;
     text-align: center;
-    text-transform: uppercase;
     background-color: #402d89;
     height: fit-content;
   }
+.underunicorn {
+    text-transform: uppercase;
+}
 /*Pics*/
 .goodiespic{
     background-color: black;
 }
-.fenty{
+.fenty, .lolvid {
     width: 100%;
     border-radius: 5px;
 }
-.fentybox {
+.fentybox, .lolplayvideo {
     width: 55%;
     margin: 10px;
     align-content: center;
@@ -505,7 +529,7 @@ padding: 10px;
 } 
 /**/
 @media only screen and (max-width: 540px){
-    .underunicorn{
+    .underunicorn, .underlolmedia {
         font-size: 15px;
     }
 }
@@ -528,7 +552,7 @@ padding: 10px;
     }
     .text {
         order: 2;
-        width: 85%;
+        width: 90%;
     }
     .startpage {
         justify-content: right;
@@ -551,7 +575,7 @@ padding: 10px;
     }
 }
 @media only screen and (max-width: 895px) {
-    .section , .videoarcane2 , .fentybox , .text2, .sectionp2 {
+    .section , .videoarcane2 , .fentybox , .text2, .sectionp2, .lolplayvideo {
         width: auto;
     }
     .videotrailers1{
@@ -778,7 +802,7 @@ padding-left: 10px;
 height: 240px;
 background-size: 94%;
 }
-.text, .resumesaison1 {
+.text, .resumesaison1, .playloltext {
 font-size: 1rem;
 }
 .arcanegif {
@@ -800,7 +824,7 @@ font-size: 1.2rem;
 /* */
 
 @media only screen and (max-width: 540px) {
-    .underunicorn {
+    .underunicorn , .underlolmedia {
       font-size: 16px;
     }
 }
@@ -817,7 +841,7 @@ font-size: 1.2rem;
   .goodiesgif {
     background-position: center;
   }
-  .text, .resumesaison1 {
+  .text, .resumesaison1, .playloltext {
     font-size: 1rem;
   }
   .firsttext {
@@ -834,7 +858,7 @@ font-size: 1.2rem;
   .videofanart {
     height: 350px;
   }
-  .text, .resumesaison1 {
+  .text, .resumesaison1, .playloltext {
     font-size: 1rem;
   }
   .textarcane2 {
@@ -904,6 +928,13 @@ font-size: 1.2rem;
     .newsgif {
         height: 500px;
         background-size: 70%;
+    }
+}
+/* media querry video part1 league of legends */
+@media only screen and (max-width: 1215px){
+    .lolplayvideo {
+        margin: 0px;
+        width: 92%;
     }
 }
 
