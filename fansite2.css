@@ -268,10 +268,8 @@ li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(./Media2/Pictures2/pow\ pow.png);
+    background-image: url(./Media2/Video2/Boom-jinx\ was\ here.gif);
     background-repeat: repeat;
-    background-color: #091549;
-    background-position: center;
 }
 .Riotgame {
     margin-top: 0px;
@@ -843,7 +841,7 @@ font-size: 1.2rem;
     font-size: 1.2rem;
   }
   .goodiesgif {
-    background-position: center;
+    background-position: top;
   }
   .text2 {
     font-size: 1rem;
