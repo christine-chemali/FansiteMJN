@@ -35,6 +35,13 @@ body {
       background: #eee;
       padding-bottom: 0.2%;
 }
+.hero {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.herotext {
+    margin-top:0px;
+}
 /********************************** MENU******************************/
 
 /*** Nav Bar ******/
