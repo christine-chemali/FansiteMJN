@@ -253,10 +253,10 @@ li a:hover {
     padding-top: 20px;
 }
 .LOF{
-    background-image: url(./Media2/Pictures2/JINX\ WAS\ HERE.jpg);
+    background-image: url(./Media2/Pictures2/JINX-WAS-HERE.jpg);
 }
 .leaguegif {
-    background-image: url(./Media2/Video2/jinx\ battaille.gif);
+    background-image: url(./Media2/Video2/jinx-battaille.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -268,7 +268,7 @@ li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(./Media2/Video2/Boom-jinx\ was\ here.gif);
+    background-image: url(./Media2/Video2/Boom-jinx-was-here.gif);
     background-repeat: repeat;
 }
 .Riotgame {
@@ -326,7 +326,7 @@ li a:hover {
 
 /******************************* Part 2 arcane *************************/
 .arcanegif {
-  background-image: url(./Media2/Video2/jinx\ bang.gif);
+  background-image: url(./Media2/Video2/jinx-bang.gif);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 40%;
@@ -365,14 +365,14 @@ li a:hover {
     padding-bottom: 15px;
 }
 .ARC {
-    background-image: url(./Media2/Pictures2/Jinx\ en\ rose.png);
+    background-image: url(./Media2/Pictures2/Jinx-en-rose.png);
     background-repeat: repeat;
     background-color: black;
 }
 
 /******************************** Part 3 actu news events ***************************/
 .newsgif {
-    background-image:url(./Media2/Video2/jinx\ cocktail\ party.gif) ;
+    background-image:url(./Media2/Video2/jinx-cocktail-party.gif) ;
     margin: 0px;
     background-repeat: no-repeat;
     height: 500px;
@@ -499,7 +499,7 @@ padding: 10px;
     padding: 10px;
     border-radius: 5px;
     margin-top: 0px;
-    background-image: url(./Media2/Pictures2/jinxez\ vous.png);
+    background-image: url(./Media2/Pictures2/jinxez-vous.png);
     color: #e7ebf2;
     background-size: 400px;
     height: 300px;
@@ -623,7 +623,7 @@ padding: 10px;
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-image: url(./Media2/Video2/fond\ fanart.gif);
+    background-image: url(./Media2/Video2/fond-fanart.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -655,9 +655,7 @@ padding: 10px;
     padding-bottom: 20px;
     justify-content: space-around;
     overflow: hidden;
-    background-image: url(./Media2/Video2/fond\ fanart.gif);
-  /*  background-repeat: no-repeat;
-    background-size: cover;*/
+    background-image: url(./Media2/Video2/fond-fanart.gif);
 }
 .videofanart {
     height: 400px;
