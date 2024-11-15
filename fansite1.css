@@ -250,6 +250,12 @@ li a:hover {
 h5{
     font-size: 1.5rem;
 }
+/**Media Querries histoire**/
+@media only screen and (max-width: 730px) {
+    .mainpage .Trousse1 .character3 .chartext{
+        flex:auto
+    }
+}
         /**actualités**/
 /**video dlc**/
 /**article 1**/
@@ -281,11 +287,11 @@ h5{
 /**article 2 et 3**/
 .billets{
     margin: auto;
-    width: 50%;
+    width: 80%;
 }
 .mangaboruto{
     margin: auto;
-    width: 50%;
+    width: 80%;
 }
 .TrousseVideo2{
     display: flex;
@@ -293,10 +299,6 @@ h5{
     text-align: center;
     font-family: "carving-regular";
     width: auto;
-    height: auto;
-}
-.titresecondaire_actu{
-    margin: 0px;
 }
 .LienVideo2{
     color: black;
@@ -304,6 +306,34 @@ h5{
 }
 .ecartarticle{
     margin-top: -12px;
+}
+.titresecondaire_actu{
+    height: 48px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    font-weight: bold;
+    color: inherit;
+    margin: 0;
+    font-family: "carving-regular";
+}
+/**Media Querries Actualités**/
+@media only screen and (max-width: 730px) {
+    .TrousseVideo{
+        flex-direction: column;
+    }
+    .titresecondaire_actu{
+        height: 30px;
+    }
+    .TrousseVideo1{
+        padding-right: 0px;
+    }
+    .mangaboruto, .billets{
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+    }
 }
 /******Goodies******/
 .maingoodies{
@@ -339,7 +369,6 @@ h5{
     font-size: 16px;
     line-height: 24px;
     color: black;
-    -webkit-box-orient: vertical;
     font-weight: bold;
     color: inherit;
     margin: 0;
@@ -347,9 +376,7 @@ h5{
 }
 .ImgGoodies1{
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
     height: auto;
@@ -384,6 +411,12 @@ h5{
 .maingoodies a{
     color:black;
     text-decoration: none;
+}
+/**Media Querries Goodies**/
+@media only screen and (max-width: 730px) {
+    .maingoodies{
+        display: block;
+    }
 }
 /***************************** footer ************************/
 /* footer menu */
