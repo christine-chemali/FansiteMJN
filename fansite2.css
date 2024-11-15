@@ -575,8 +575,11 @@ padding: 10px;
     }
 }
 @media only screen and (max-width: 895px) {
-    .section , .videoarcane2 , .fentybox , .text2, .sectionp2, .lolplayvideo {
+    .section , .videoarcane2 , .fentybox , .sectionp2, .lolplayvideo {
         width: auto;
+    }
+    .text2{
+        width: 92%;
     }
     .videotrailers1{
         width: 92%;
