@@ -279,7 +279,23 @@ li a:hover {
 .text {
     width: 70%;
 }
-
+.textjinx {
+    width: 55%;
+    font-family: "QuicksandBook";
+    text-align: left;
+    margin: auto;
+    font-size: 1rem;
+    color: #e7ebf2;
+    background-color: #402d89;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 5px;
+}
+.jinxpic {
+    border-radius: 5px;
+    max-width: 340px;
+    }
 .text, .resumesaison1, .playloltext {
     font-family: "QuicksandBook";
     text-align: left;
@@ -293,14 +309,28 @@ li a:hover {
     margin-top: 25px;
     margin-bottom: 25px;   
 }
+.resumesaison1{
+    margin: 10px;
+}
 .riotlogo {
     align-content: center;
-    }
-
+}
 .Rlogo {
     width: 210px;
     margin: 10px;
     }
+.lolpic {
+    margin: auto;
+}
+
+.jinkinlol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    background-image: url(./Media2/Video2/Boom-jinx-was-here.gif);
+}
 .lolegend {
     display: flex;
     flex-direction: row;
@@ -335,7 +365,7 @@ li a:hover {
   background-color: black;
 }
 .resumesaison1 {
-    width: 90%;
+    width: auto;
 }
 .titleresume1 {
     font-family: "QuicksandBold";
@@ -540,8 +570,7 @@ padding: 10px;
         height: 130px;
         background-repeat: no-repeat;
         margin-bottom: 20px;
-        }
-        
+        }   
     .maintitle {
         background-image: none;
         }
@@ -554,9 +583,18 @@ padding: 10px;
         order: 2;
         width: 90%;
     }
+    .lolpic {
+        width: auto;
+        text-align: center;
+        order:1;
+    }
+    .textjinx {
+        width: auto;
+        margin: 10px;
+    }
     .startpage {
         justify-content: right;
-      }
+    }
 }
 
 @media only screen and (max-width: 649px) {
@@ -618,6 +656,21 @@ padding: 10px;
         min-width: 275px;
     }
 }
+@media only screen and (min-width: 511px) and (max-width: 975px){
+    .jinxpic{
+        width: 500px;
+    }
+}
+@media only screen and (min-width: 461px) and (max-width: 510px){
+    .jinxpic{
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 460px){
+    .jinxpic{
+        width: 90%;
+    }
+}
 /********************* Part 5 Fanart gallery ********************************/
 .monkey {
     width: 100px;
@@ -638,7 +691,7 @@ padding: 10px;
     color: #e7ebf2;
     margin: 0px;
     background-color: black;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 20px;
     padding-bottom: 5px;
 }
@@ -803,8 +856,10 @@ padding-left: 10px;
 height: 240px;
 background-size: 94%;
 }
-.text, .resumesaison1, .playloltext {
+.text, .resumesaison1, .playloltext , .text2 {
 font-size: 1rem;
+width: auto;
+margin: 10px;
 }
 .arcanegif {
 background-size: 90%;
@@ -817,12 +872,8 @@ font-size: 1.05rem;
 .firsttext::first-letter {
 font-size: 1.2rem;
 }
-.text2 {
-    font-size: 1rem;
 }
-}
-/* 
-/* */
+/**/
 
 @media only screen and (max-width: 540px) {
     .underunicorn , .underlolmedia {
@@ -938,5 +989,9 @@ font-size: 1.2rem;
         width: 92%;
     }
 }
-
+@media only screen and (max-width: 1297px){
+    #fanart, #goodies, #league, #news, #arcane {
+        padding-top: 40px;
+    }
+}
 
