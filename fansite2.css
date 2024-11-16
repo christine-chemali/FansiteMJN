@@ -41,6 +41,23 @@ body {
       background: #242763;
       padding-bottom: 0.2%;
 }
+/* AUDIO*/
+.blackaudio {
+    display: flex;
+    flex-direction: row;
+    color: #e7ebf2;
+    font-family: "QuicksandBold";
+    flex-wrap: wrap;
+    justify-content: end;
+    background-color: black;
+    text-align: end;
+    font-size: small;
+    padding-bottom: 5px;
+}
+.audiotitle {
+    width: 100%;
+    padding: 10px;
+}
 /********************************** MENU******************************/
 
 /*** Nav Bar ******/
@@ -215,12 +232,6 @@ li a:hover {
     padding-bottom: 1px;
     padding-top: 1px;   
 }
-/*Main media querries*/ /*
-@media only screen and (max-width: 933px){
-    .mainpage {
-        background-size: auto;
-      }
-}*/
 /**** first part Text ****/
 .firsttext {
     font-family: "QuicksandBold";
@@ -270,11 +281,13 @@ li a:hover {
     justify-content: center;
     background-image: url(./Media2/Video2/Boom-jinx-was-here.gif);
     background-repeat: repeat;
+    background-position: bottom;
 }
 .Riotgame {
     margin-top: 0px;
     margin-bottom: 10px;
     font-family: "QuicksandBold";
+    text-align: center;
 }
 .text {
     width: 70%;
@@ -295,7 +308,7 @@ li a:hover {
 .jinxpic {
     border-radius: 100px;
     max-width: 340px;
-    border: 10px solid;
+    border: 10px solid black;
 }
 .text, .resumesaison1, .playloltext {
     font-family: "QuicksandBook";
@@ -330,6 +343,7 @@ li a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0px;
+    background-position: top;
     background-image: url(./Media2/Video2/Boom-jinx-was-here.gif);
 }
 .lolegend {
@@ -384,6 +398,20 @@ li a:hover {
 .buttbd:hover {
     color: #8dd9ff;
   }
+.joueavecjinx{
+    border-radius: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 10px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.joueavecjinx , .jinxpic{
+    font-family: "QuicksandBook";
+    color:#e7ebf2;
+}
+
 /******************************* Part 2 arcane *************************/
 .arcanegif {
   background-image: url(./Media2/Video2/jinx-bang.gif);
@@ -695,6 +723,11 @@ padding: 10px;
 @media only screen and (max-width: 460px){
     .jinxpic{
         width: 90%;
+    }
+}
+@media only screen and (max-width: 1035px){
+    .joueavecjinx {
+        width: 92%;
     }
 }
 /********************* Part 5 Fanart gallery ********************************/
