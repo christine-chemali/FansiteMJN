@@ -1,19 +1,19 @@
 /* Fonts */
 @font-face {
     font-family: "dragonhunter";
-    src: url('./Media3/Fonts/dragonhunter.otf') format('opentype');
+    src: url('./Media3/Fonts3/dragonhunter.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "carving-regular";
-    src: url('./Media3/Fonts/carving-regular.otf')  format('opentype');
+    src: url('./Media3/Fonts3/carving-regular.otf')  format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "carving-bold";
-    src: url('./Media3/Fonts/carving-bold.otf') format('opentype');
+    src: url('./Media3/Fonts3/carving-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,9 +30,9 @@ body {
     padding-top: 5%;
 }
 .page2 {
-      padding-right: 10%;
-      padding-left: 10%;
-      background: #eee;
+    padding-right: 10%;
+    padding-left: 10%;
+    background: #eee;
 }
 
 /********************************** MENU ******************************/
@@ -107,8 +107,19 @@ li a:hover {
 #hamburgermenu {
     display: none;
 }
+.menu2 {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-family: "carving-bold";
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
-/* Media3 Queries for hamburger menu */
+/* Media Queries for hamburger menu */
 @media only screen and (max-width: 954px) {
     .navbar {
         position: relative;
@@ -140,16 +151,6 @@ li a:hover {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
-    .navlist2 {    
-        margin: 0;  
-        padding: 0; 
-        width: 100%;  
-        list-style-type: none;    
-        background-color: black; 
-        border-top-left-radius: 5px;    
-        border-top-right-radius: 5px;    
-        bottom: 0;    
-    }
     .hamburgermenu:checked + .menu + .navlist {
         display: flex;
         flex-direction: column;
@@ -165,18 +166,33 @@ li a:hover {
     .searchbar {
         margin-bottom: 25px;
     }
+    .headermenu {
+        padding-bottom: 6px;
+    }
+
+    /* Footer menu */
+    .menu2 {
+        display: block;
+    }
     .hamburgermenu2:checked + .menu2 + .navlist2 {
         display: flex;
         flex-direction: column;
+    }
+    .navlist2 {
+        display: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background-color: black;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     .link2 {
         padding-top: 14px;
         padding-right: 16px;
         padding-bottom: 14px;
         padding-left: 25px;
-    }
-    .headermenu {
-        padding-bottom: 6px;
     }
 }
 
@@ -230,7 +246,7 @@ li a:hover {
     padding-top: 60px;
 }
 .charpic1, .charpic2, .charpic3, .charpic4, video {
-    max-width: 60%;
+    max-width: 40%;
     height: auto;
     display: block;
     margin: auto;
