@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
     font-family: "dragonhunter";
-    src: url('./Media/Fonts/dragonhunter.otf') format('opentype');
+    src: url('./Media3/Fonts/dragonhunter.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -108,7 +108,7 @@ li a:hover {
     display: none;
 }
 
-/* Media Queries for hamburger menu */
+/* Media3 Queries for hamburger menu */
 @media only screen and (max-width: 954px) {
     .navbar {
         position: relative;
@@ -230,7 +230,7 @@ li a:hover {
     padding-top: 60px;
 }
 .charpic1, .charpic2, .charpic3, .charpic4, video {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     display: block;
     margin: auto;
