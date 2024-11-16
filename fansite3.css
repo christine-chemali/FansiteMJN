@@ -7,13 +7,13 @@
 }
 @font-face {
     font-family: "carving-regular";
-    src: url('./Media/Fonts/carving-regular.otf')  format('opentype');
+    src: url('./Media3/Fonts/carving-regular.otf')  format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "carving-bold";
-    src: url('./Media/Fonts/carving-bold.otf') format('opentype');
+    src: url('./Media3/Fonts/carving-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
