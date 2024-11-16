@@ -280,7 +280,7 @@ li a:hover {
     width: 70%;
 }
 .textjinx {
-    width: 55%;
+    width: 52%;
     font-family: "QuicksandBook";
     text-align: left;
     margin: auto;
@@ -290,17 +290,18 @@ li a:hover {
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
-    margin: 5px;
+    margin: 10px;
 }
 .jinxpic {
-    border-radius: 5px;
+    border-radius: 100px;
     max-width: 340px;
-    }
+    border: 10px solid;
+}
 .text, .resumesaison1, .playloltext {
     font-family: "QuicksandBook";
     text-align: left;
     margin: auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #e7ebf2;
     background-color: #402d89;
     border-radius: 5px;
@@ -353,7 +354,36 @@ li a:hover {
     justify-content: space-evenly;
     align-content: center;
 }
-
+.bdjinx {
+    background-image: url(./Media2/Pictures2/ziggsetjinxbd.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.blacksep {
+    height:40px;
+    background-color: black;
+}
+.underbd {
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 10px;
+}
+.buttbd {
+    padding: 15px;
+    font-family: "QuicksandBold";
+    font-size: 0.9rem;
+    margin-top: 15px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    margin-right: 0px;
+}
+.buttbd:hover {
+    color: #8dd9ff;
+  }
 /******************************* Part 2 arcane *************************/
 .arcanegif {
   background-image: url(./Media2/Video2/jinx-bang.gif);
@@ -656,14 +686,10 @@ padding: 10px;
         min-width: 275px;
     }
 }
-@media only screen and (min-width: 511px) and (max-width: 975px){
-    .jinxpic{
-        width: 500px;
-    }
-}
+
 @media only screen and (min-width: 461px) and (max-width: 510px){
     .jinxpic{
-        width: 320px;
+        width: 295px;
     }
 }
 @media only screen and (max-width: 460px){
