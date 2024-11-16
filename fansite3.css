@@ -1,4 +1,4 @@
-/*fonts*/
+/* Fonts */
 @font-face {
     font-family: "dragonhunter";
     src: url('./Media/Fonts/dragonhunter.otf') format('opentype');
@@ -17,11 +17,12 @@
     font-weight: normal;
     font-style: normal;
 }
-/*page structure*/
+
+/* Page structure */
 body {
     margin: 0px;
     background: red;
-    }
+}
 .page {
     padding-right: 11.5%;
     padding-left: 10%;
@@ -33,10 +34,10 @@ body {
       padding-left: 10%;
       background: #eee;
 }
-/********************************** MENU******************************/
+
+/********************************** MENU ******************************/
 
 /*** Nav Bar ******/
-/*fixed position*/
 .headermenu {
     background-color: black;
     position: fixed;
@@ -88,7 +89,8 @@ li a:hover {
     border-style: none;
     margin-left: 25px;
 }
-/* bottom link menu */
+
+/* Bottom link menu */
 .navlist2 {
     margin: 0px;
     list-style-type: none;
@@ -96,16 +98,18 @@ li a:hover {
     background-color: black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    }
-/*Hamburger menu*/
+}
+
+/* Hamburger menu */
 .menu {
     display: none;
-  }
+}
 #hamburgermenu {
     display: none;
 }
-/*Media Querries hamburger menu*/
-@media only screen and (max-width: 954px){
+
+/* Media Queries for hamburger menu */
+@media only screen and (max-width: 954px) {
     .navbar {
         position: relative;
         display: inline-block;
@@ -121,7 +125,7 @@ li a:hover {
         font-family: "carving-bold";
         margin-left: 15px;
     }
-    .menu:hover{
+    .menu:hover {
         color: rgb(128, 0, 0);
     }
     .navlist {
@@ -159,23 +163,25 @@ li a:hover {
         display: block;   
     }
     .searchbar {
-    margin-bottom: 25px;
+        margin-bottom: 25px;
     }
     .hamburgermenu2:checked + .menu2 + .navlist2 {
         display: flex;
         flex-direction: column;
     }
-    .link2{
-    padding-top: 14px;
-      padding-right: 16px;
-      padding-bottom: 14px;
-      padding-left: 25px;
+    .link2 {
+        padding-top: 14px;
+        padding-right: 16px;
+        padding-bottom: 14px;
+        padding-left: 25px;
     }
     .headermenu {
         padding-bottom: 6px;
     }
 }
+
 /****************************** Main *************************/
+
 /* Site title and description */
 .mainpage {
     background: #80808038;
@@ -189,7 +195,8 @@ li a:hover {
     margin-top: 10px;
     text-align: center;
 }
-/**** first part Text ****/
+
+/**** First part Text ****/
 .firsttext {
     font-family: "carving-bold";
     width: 70%;
@@ -206,6 +213,7 @@ li a:hover {
     font-weight: lighter;
     line-height: 0.8rem;
 }
+
 /***** Second part Characters ******/
 .characters {
     display: flex;
@@ -213,110 +221,34 @@ li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
-    
 }
 
-/*Characters images*/
-
+/* Characters images and responsive design */
 .section {
     width: 68%;
     margin-top: -60px;
     padding-top: 60px;
 }
-.charpic1 {
-    width: 25%;
-    font-family: "carving-regular";
-}
-.charpic2 {
-    width: 76.5%;
-    font-family: "carving-regular";
-}
-.charpic3 {
-    width: 88%;;
-    font-family: "carving-regular";
-}
-.charpic4 {
-    width: 50%;;
-    font-family: "carving-regular";
+.charpic1, .charpic2, .charpic3, .charpic4, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
-/*Media Queries index page character sections*/
-@media only screen and (min-width: 650px) and (max-width: 895px) {
-    .charpic2 {
-    width: 60%;
-    }
-}
-@media only screen and (max-width: 649px) {
-    .charpic2 {
-    width: 80%;
-    }
-}
-@media only screen and (min-width: 942px) and (max-width: 1207px){
-    .section {
-        width: 47%;
-    }
-}
-@media only screen and (min-width: 896px) and (max-width: 941px) {
-    .section {
-        width: 46%;
-    }
-}
+/* Responsive Images */
 @media only screen and (max-width: 895px) {
-    .section {
-        width: auto;
-    }
-    .character1picture {
-        text-align: left;
-    }
-    .character2pic{
-        text-align: center;
-    }
-    .character3picture {
-        text-align:right;
-    }
-    .character4picture{
-        text-align: center;
-    }
-    .charpic1 {
-        width: 60%;
-    }
-    .charpic2 {
-        width: 57%;
-    }
-    .charpic3 {
-        width: 58%;
-    }
-    .charpic4 {
-        width: 58%;
-    }
-}
-@media only screen and (max-width: 649px) {
-    .charpic1 {
+    .charpic1, .charpic2, .charpic3, .charpic4, video {
         width: 80%;
     }
-    .charpic2 {
-        width: 77%;
-    }
-    .charpic3 {
-        width: 78%;
-    } 
-    .charpic4 {
-        width: 58%;
-    }
-    .character1picture {
-        text-align: left;
-    }
-    .character2picture {
-        text-align: center;
-    }
-    .character3picture {
-        text-align:right;
-    }
-    .character4picture {
-        text-align:center;
+}
+@media only screen and (max-width: 649px) {
+    .charpic1, .charpic2, .charpic3, .charpic4, video {
+        width: 100%;
     }
 }
-/**** Text under pictures ****/
+
+/* Text under pictures */
 .chartext {
     font-family: "carving-regular";
     padding: 10px;
@@ -324,14 +256,14 @@ li a:hover {
     background: whitesmoke;
     margin-top: 0px;
 }
-/***************************** footer ************************/
 
+/***************************** Footer ************************/
 .fansitefooter {
     border-radius: 5px;
     position: fixed;
     bottom: 0px;
     width: 78.5%;
-  }
+}
 .footer {
     margin-right: 11.5%;
     margin-left: 10%;
@@ -339,5 +271,4 @@ li a:hover {
     background-color: black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  }
-
+}
