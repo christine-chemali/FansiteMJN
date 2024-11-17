@@ -489,6 +489,58 @@ li a:hover {
     margin: 10px;
     align-content: center;
 }
+/*Newsletter*/
+.newsletterblock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    color: #fb3eb9;
+    font-family: "Quicksandbold";
+    padding: 10px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+}
+.newsletterjinx {
+    font-family: "Quicksandbold";
+}
+.checkboxnews {
+    margin-top: 10px;
+}
+.labelcheck {
+    font-style: italic;
+    }
+.inputnews{
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+    font-family: "Quicksandbold";
+    border-style: none;
+    margin-bottom: 5px;
+}
+.labelnews, .labelcheck {
+    font-size: 0.9rem;
+}
+.newslettertitle {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.buttonabo {
+    padding: 15px;
+    font-family: "QuicksandBold";
+    font-size: 0.9rem;
+    background: #fb3eb9;
+    color: black;
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+.buttonabo:hover {
+    background-color: #8dd9ff;
+}
 /************************************** part 4 goodies ************/
 .goodmerch {
     display: flex;
