@@ -30,7 +30,7 @@
                                 <li><a href="#goodies" class="link">Goodies</a></li>
                                 <li><a href="#fanart" class="link">Fanart</a></li>
                                 <li><a href="contact.html" class="link">Nous contacter</a></li>
-                                <input class="searchbar" type="text" placeholder="Rechercher..." aria-label="Rechercher">
+                                <li><input class="searchbar" type="text" placeholder="Rechercher..." aria-label="Rechercher"></li>
                             </ul>
                 </nav>
             </header>
@@ -405,19 +405,19 @@
                         </div>
                         <form class="newsletterblock" action="action_page.php">
                             <section class="newslettertitle">
-                                <h2 class="newsletterjinx">Si t'es Jinxed<br>Abonne toi<br>aux News</h2>
+                                <h2 class="newsletterjinx">Si t'es Jinx<br>Abonne toi<br>aux News</h2>
                             </section>
                             <div class="newsletterform">
                                 <label class="labelnews" for="prenom">Prénom</label><br>
-                                <input type="text" class="inputnews" placeholder=" Ton prénom" name="prenom" aria-label="prenom" required>
+                                <input type="text" id="prenom" class="inputnews" placeholder=" Ton prénom" name="prenom" aria-label="prenom" required>
                                 <br>
                                 <label class="labelnews" for="E-mail">E-mail</label><br>
-                                <input type="text" class="inputnews" placeholder=" Ton e-mail" name="E-mail" aria-label="E-mail" required>
+                                <input type="text" id="E-mail" class="inputnews" placeholder=" Ton e-mail" name="E-mail" aria-label="E-mail" required>
                                 <br>
                                 
                             </div>
                             <div class="buttonnews">
-                                <input type="checkbox" class="checkboxnews" name="checkbox" aria-label="case a cocher" required>
+                                <input type="checkbox" id="checkbox" class="checkboxnews" name="checkbox" aria-label="case a cocher" required>
                                 <label class="labelcheck" for="checkbox">J'ai lu et j'accepte la<br><a href="https://jinx/politiquedeconfidentialité.com" >politique de confidentialité</a></label>
                                <br>
                                 <button class="buttonabo" aria-label="je m'abonne" type="submit">Je m'abonne</button>
